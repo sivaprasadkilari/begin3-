@@ -1,0 +1,13 @@
+def is_lucky(string):
+
+    ascii_sum = sum(ord(char) for char in string)
+    
+    if ascii_sum % 2 == 0:
+        return True
+    else:
+        return False
+input_string = input("")
+if is_lucky(input_string):
+    print("lucky")
+else:
+    print("not lucky")
