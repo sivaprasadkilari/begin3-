@@ -1,0 +1,15 @@
+def indices_of_capital_letters(s):
+    capital_indices = []
+    for index, char in enumerate(s):
+        if char.isupper():
+            capital_indices.append(index)
+    if capital_indices:
+        return capital_indices
+    else:
+        return -1
+input_string = input("")
+result = indices_of_capital_letters(input_string)
+if isinstance(result, list):
+    print(*result)
+else:
+    print(result)
